@@ -2,7 +2,6 @@
 % =============ptrk.lechner@gmail.com====================
 % No warranties whatsoever.
 
-
 %Dokumentklasse
 \documentclass[a4paper,11pt]{scrreprt}
 \usepackage[left= 3.5cm,right = 3cm, bottom = 3.5 cm, top = 3 cm]{geometry}
@@ -105,7 +104,6 @@
 \usepackage{hyperref}
 \usepackage{longtable} % longtable support required by pandoc >1.10
 
-
 % embedding of audio/video files etc.
 % \usepackage{attachfile}
 % \usepackage{movie15}
@@ -115,7 +113,6 @@
 
 % =============== BlockDiagram Drawing Config
 \usetikzlibrary{shapes,arrows}
-
 
 % Definition of blocks:
 \tikzset{%
@@ -165,12 +162,6 @@
 \usepackage[scaled]{uarial}
 \renewcommand*{\familydefault}{\sfdefault}
 
-% Setze arial font
-% \usepackage{fontspec}
-% \setmainfont{Arial}
-
-% \renewcommand*{\familydefault}{uarial}
-
 % FH-grünBlau
 \definecolor{FH}{rgb}{0.10, 0.57, 0.68}
 % FH-grünBlau 2
@@ -217,7 +208,7 @@
 % ============= Dokumentbeginn =============
 
 \begin{document}
-
+% SOMETHING IS WRONG HERE.
 \include{01_titel}
 \include{01_titel}
 % \part im Inhaltsverzeichnis nicht nummerieren
@@ -247,6 +238,11 @@
 \pagestyle{fancy}
 
 \newpage
+
+% /*================================
+% =            CONTENTS            =
+% ================================*/
+
 \include{01_chapter1}
 
 \include{02_chapter2}
@@ -256,6 +252,7 @@
 \begin{appendix}
 \include{someAppendix}
 \end{appendix}
+
 %Verzeichnis aller Bilder
 \newpage
 \listoffigures
