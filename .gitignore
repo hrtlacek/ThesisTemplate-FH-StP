@@ -1,0 +1,14 @@
+*.out
+*.aux
+dummy.py
+*.gz
+*.toc
+*.log
+*.fdb_latexmk
+*.sublime-workspace
+*.sublime-project
+*.blg
+*.lof
+*.bbl
+*.atfi
+rt22.xml
